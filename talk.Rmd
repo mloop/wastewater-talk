@@ -1,0 +1,121 @@
+---
+title: "Detection of substances commonly abused using wastewater at a college football game"
+author: 
+  - "Matthew Shane Loop, PhD FAHA"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+background-image: url("https://chapelboromedia.s3.amazonaws.com/uploads/2021/02/11171326/Image-from-iOS-3.jpg")
+background-size: cover
+
+
+### .white[UNC beats Duke: Feb 12, 2021]
+
+---
+
+background-image: url("talk_files/mgs_ph.png")
+background-size:contain
+
+---
+
+# Mass gatherings and substance use
+
+- Could provide a window into community substance use
+- A particular community could have a certain profile of substance use, leading to targeted interventions
+
+---
+
+# The problem
+
+- How do we measure something that's (possibly) illegal to have?
+- What if we don't have the resources our particular community needs?
+- We should care for the health problems of our particular community (i.e., precision public health)
+
+---
+
+.pull-left[
+## Matthew Loop
+
+- PhD in Biostatistics and Postdoctoral Fellowship in Epidemiology from UAB
+- Was an Assistant Professor in the Department of Biostatistics at UNC for 4 years
+- Since 2020 have been an Assistant Professor in the Division of Pharmacotherapy and Experimental Therapeutics at the UNC Eshelman School of Pharmacy
+- "Statidemiologist" who tries to estimate the effects of drugs using observational data and statistical modeling
+]
+
+.pull-right[
+![](https://chapelboromedia.s3.amazonaws.com/uploads/2021/08/11133513/Beard-Hall.jpg)
+]
+
+---
+
+# Collaborators
+
+**Set up page of collaborators here using Google Docs, then download to PDF, then convert to image**
+
+Dom, Chris, Xingsong, Jared, Bikram
+
+---
+
+class: center, middle, inverse
+
+## So, where might you go to look for substances abused at a mass gathering?
+
+---
+
+background-image: url("https://www.stadiumjourney.com/wp-content/uploads/2015/09/Welcome-to-the-Swamp.jpg")
+background-size: cover
+
+---
+
+# Measure the drug concentrations
+
+- Used a Teledyne ISCO sampler at 2 man holes and 1 pumping station
+- Sampling began 1 hour before kick-off to 30 minutes after the game ended
+- Grab samples of 300 mL untreated wastewater collected every 30 minutes
+
+![](https://www.teledyneisco.com/en-us/waterandwastewater/Product%20Images/3700C.jpg)
+
+---
+
+# Measure the drug concentrations
+
+**pics**
+
+---
+
+# Measure the drug concentrations
+
+![](https://scholars.okstate.edu/files-asset/4104189/wagner-jarrad.jpg)
+
+
