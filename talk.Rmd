@@ -36,6 +36,12 @@ style_duo_accent(
 )
 ```
 
+class: center, middle, inverse
+
+## [mloop.github.io/wastewater-talk](https://mloop.github.io/wastewater-talk/)
+
+---
+
 background-image: url("https://chapelboromedia.s3.amazonaws.com/uploads/2021/02/11171326/Image-from-iOS-3.jpg")
 background-size: cover
 
@@ -116,6 +122,44 @@ background-size: cover
 
 # Measure the drug concentrations
 
-![](https://scholars.okstate.edu/files-asset/4104189/wagner-jarrad.jpg)
+.pull-left[![](https://scholars.okstate.edu/files-asset/4104189/wagner-jarrad.jpg)
+]
 
+.pull-right[
+- Wastewater samples underwent solid phase extraction
+- Samples were run on two different machines
+    - Waters Acuity TQD LC-MS/MS (designed for wastewater; broad range)
+    - Shimadzu 8040 LC-MS/MS (designed for urine samples; smaller range)
+]
 
+---
+
+background-image: url("talk_files/missing_data.png")
+background-size: contain
+
+---
+
+background-image: url("talk_files/histogram.png")
+background-size: contain
+
+---
+
+# Model the concentration values
+
+---
+
+# Estimate consumption
+
+---
+
+# Limitations
+
+include link/results to poll anywhere poll
+
+---
+
+class: inverse, middle, center
+
+# Questions
+
+include link to questions poll
