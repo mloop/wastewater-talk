@@ -4,7 +4,6 @@
     <title>Detection of substances commonly abused using wastewater at a college football game</title>
     <meta charset="utf-8" />
     <meta name="author" content="Matthew Shane Loop, PhD FAHA" />
-    <meta name="date" content="2022-04-23" />
     <script src="talk_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -14,7 +13,6 @@ class: center, middle, inverse, title-slide
 
 # Detection of substances commonly abused using wastewater at a college football game
 ### Matthew Shane Loop, PhD FAHA
-### 2022-04-23
 
 ---
 
@@ -60,23 +58,19 @@ background-size:contain
 .pull-left[
 ## Matthew Loop
 
-- PhD in Biostatistics and Postdoctoral Fellowship in Epidemiology from UAB
-- Was an Assistant Professor in the Department of Biostatistics at UNC for 4 years
+- PhD in Biostatistics / Postdoctoral Fellowship in Epidemiology from UAB
 - Since 2020 have been an Assistant Professor in the Division of Pharmacotherapy and Experimental Therapeutics at the UNC Eshelman School of Pharmacy
-- "Statidemiologist" who tries to estimate the effects of drugs using observational data and statistical modeling
 ]
 
 .pull-right[
 ![](https://chapelboromedia.s3.amazonaws.com/uploads/2021/08/11133513/Beard-Hall.jpg)
+- "Statidemiologist" who estimates the effects of drugs using observational data
 ]
 
 ---
 
-# Collaborators
-
-**Set up page of collaborators here using Google Docs, then download to PDF, then convert to image**
-
-Dom, Chris, Xingsong, Jared, Bikram
+background-image: url("talk_files/team.png")
+background-size: cover
 
 ---
 
@@ -93,9 +87,9 @@ background-size: cover
 
 # Measure the drug concentrations
 
-- Used a Teledyne ISCO sampler at 2 man holes and 1 pumping station
-- Sampling began 1 hour before kick-off to 30 minutes after the game ended
-- Grab samples of 300 mL untreated wastewater collected every 30 minutes
+- Used a Teledyne ISCO sampler
+- Sampling 1 hour before game to 30 minutes after game
+- Samples of 300 mL wastewater collected every 30 minutes
 
 ![](https://www.teledyneisco.com/en-us/waterandwastewater/Product%20Images/3700C.jpg)
 
@@ -108,16 +102,10 @@ background-size: cover
 ---
 
 # Measure the drug concentrations
-
-.pull-left[![](https://scholars.okstate.edu/files-asset/4104189/wagner-jarrad.jpg)
-]
-
-.pull-right[
 - Wastewater samples underwent solid phase extraction
 - Samples were run on two different machines
     - Waters Acuity TQD LC-MS/MS (designed for wastewater; broad range)
     - Shimadzu 8040 LC-MS/MS (designed for urine samples; smaller range)
-]
 
 ---
 
@@ -133,23 +121,94 @@ background-size: contain
 
 # Model the concentration values
 
+- Continuous, bounded outcome with heavy right skew
+- Values not observed because they are below or above limits of quantitation
+- Clustering of values (samples taken from same location)
+- Small sample sizes (only one observation per group)
+
+---
+# Model the concentration values
+
+- Multilevel modeling to account for the correlation
+- Use the log transformed values to make the normal likelihood more scientifically plausible
+- Modeled the 10 compounds that were detected in at least 50% of the samples
+
+---
+# (What is a multilevel model?)
+
+- Basically a linear regression model with variables to represent group, but the variables are *special*
+- Our groups were: location of measurement (3 levels), lab member who performed the solid-phase extraction (2 levels), and machine we ran the LC-MS on (2 levels)
+- Multilevel models "borrow" information from one level to predict the mean of another level
+
+---
+# Model the concentration values
+
+- Modeled the values above and below the limits of quantitation as "censored" (just like in survival analysis)
+- Slightly informative priors helped get the model to fit with the small sample sizes
+
+---
+class: middle
+.pull-left[
+![](talk_files/08_prior.png)
+]
+
+.pull-right[
+![](talk_files/08_posterior.png)
+]
+---
+background-image: url("talk_files/02_marginal_means.png")
+background-size: contain
+
+---
+background-image: url("talk_files/ppcs_amphetamine.png")
+background-size: contain
+
 ---
 
 # Estimate consumption
 
+1. Estimate the flow of water during last 30 minutes
+2. Estimate "mass load" (mg of compound) based on concentration and flow over last 30 minutes
+    - calculation involves a lot of assumptions about proportion of stadium water flow through that location and the stability of the compounds
+3. Estimate the number of doses consumed over entire sampling period
+    - more assumptions about excretion rate, ratio of molecular weights of parent compound to metabolite (e.g., cocaine to benzoylecgonine), and typical dose
+
+---
+background-image: url("talk_files/mass_load_time.png")
+background-size: contain
+
 ---
 
+background-image: url("talk_files/02_posterior_predictive_doses.png")
+background-size: contain
+
+---
+# Summary of findings
+
+1. We could detect compounds that are commonly abused using wastewater outflow at a college football game
+2. Median concentrations were highest at times when more people are going to the bathroom (e.g., in between quarters or half-time)
+3. Narcotics and opioids were among the most common compounds detected
+
+---
 # Limitations
 
-include link/results to poll anywhere poll
+- Study sampling process of "using the bathroom in the stadium during a game" is imperfect representation of substance use in Gainesville community
+- A ton of assumptions from estimated concentration to number of doses throughout the game
+- Cannot distinguish between recreational use and indicated use
+- Cannot distinguish between before stadium entry use and during game use
 
 ---
+# Future directions
 
+- Submitted an R21 to sample at multiple games: game-to-game variability, environmental predictors of concentrations, and broader impact of game day on health services delivery
+- Improve understanding of very specific exposures in a very specific population -&gt; precision public health
+- Further combine basic science and population health strategies to understand substance use / abuse in our communities (who deserve our best)
+- Could get a picture of use in a community that is more accurate than self-report 
+
+---
 class: inverse, middle, center
 
 # Questions
-
-include link to questions poll
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
