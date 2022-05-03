@@ -50,16 +50,14 @@ background-size: cover
 
 ---
 
-background-image: url("talk_files/mgs_ph.png")
-background-size:contain
-
----
-
 # Mass gatherings and substance use
 
 - Could provide a window into community substance use
 - A particular community could have a certain profile of substance use, leading to targeted interventions
 
+---
+background-image: url("talk_files/mgs_ph.png")
+background-size:contain
 ---
 background-image: url("https://image.cnbcfm.com/api/v1/image/106666956-1597694787011-2018-09-22T014903Z_502209526_RC131D7A3900_RTRMADP_3_USA-UNIVERSITY-UNC.jpg?v=1597694880&w=929&h=523&ffmt=webp")
 background-size: cover
@@ -78,13 +76,28 @@ background-size: cover
 ## Matthew Loop
 
 - PhD in Biostatistics / Postdoctoral Fellowship in Epidemiology from UAB
-- Since 2020 have been an Assistant Professor in the Division of Pharmacotherapy and Experimental Therapeutics at the UNC Eshelman School of Pharmacy
+- Assistant Professor at UNC since 2016
+- Currently in Division of Pharmacotherapy and Experimental Therapeutics at the UNC Eshelman School of Pharmacy
 ]
 
 .pull-right[
 ![](https://chapelboromedia.s3.amazonaws.com/uploads/2021/08/11133513/Beard-Hall.jpg)
 - "Statidemiologist" who estimates the effects of drugs using observational data
 ]
+
+---
+# Measuring drugs consumed is hard
+
+- Postdoctoral fellowship work was on beta blocker use and heart failure among Medicare beneficiaries
+- We have to measure proxies for watching someone put the pill in the mouth and swallow it
+- Partnering with basic sciences allowed us to obtain objectives measures of use in a *population*
+
+---
+# Aims
+
+1. Determine whether we can detect metabolites and parent compounds of substances commonly abused during a college football game using waste water sampling
+2. Model the concentrations for most commonly observed substances
+3. Estimate the number of doses of these substances consumed
 
 ---
 
@@ -95,7 +108,7 @@ background-size: cover
 
 class: center, middle, inverse
 
-## So, where might you go to look for substances abused at a mass gathering?
+## So, where might you go to look for substances commonly abused?
 
 ---
 
@@ -113,6 +126,9 @@ background-size: cover
 ![](https://www.teledyneisco.com/en-us/waterandwastewater/Product%20Images/3700C.jpg)
 
 ---
+background-image: url("talk_files/bb8.jpeg")
+background-size:contain
+---
 
 background-image: url("talk_files/sampler.jpeg")
 background-size:contain
@@ -122,23 +138,11 @@ background-size:contain
 background-image: url("talk_files/taking_sample.jpeg")
 background-size:contain
 ---
-
-background-image: url("talk_files/bb8.jpeg")
-background-size:contain
-
----
-
-background-image: url("talk_files/box.jpeg")
-background-size:contain
----
-
-
 # Measure the drug concentrations
 - Wastewater samples underwent solid phase extraction
 - Samples were run on two different machines
     - Waters Acuity TQD LC-MS/MS (designed for wastewater; broad range)
     - Shimadzu 8040 LC-MS/MS (designed for urine samples; smaller range)
-
 ---
 
 background-image: url("talk_files/missing_data.png")
@@ -171,6 +175,7 @@ background-size: contain
 - Basically a linear regression model with variables to represent group, but the variables are *special*
 - Our groups were: location of measurement (3 levels), lab member who performed the solid-phase extraction (2 levels), and machine we ran the LC-MS on (2 levels)
 - Multilevel models "borrow" information from one level to predict the mean of another level
+- Borrowing leads to better estimates when some groups are small
 
 ---
 # Model the concentration values
@@ -192,18 +197,14 @@ background-image: url("talk_files/02_marginal_means.png")
 background-size: contain
 
 ---
-background-image: url("talk_files/ppcs_amphetamine.png")
-background-size: contain
-
----
 
 # Estimate consumption
 
 1. Estimate the flow of water during last 30 minutes
+    - used measurement at central station then weighted each location according to stadium capacity
 2. Estimate "mass load" (mg of compound) based on concentration and flow over last 30 minutes
-    - calculation involves a lot of assumptions about proportion of stadium water flow through that location and the stability of the compounds
 3. Estimate the number of doses consumed over entire sampling period
-    - more assumptions about excretion rate, ratio of molecular weights of parent compound to metabolite (e.g., cocaine to benzoylecgonine), and typical dose
+    - assumed excretion rate, ratio of molecular weights of parent compounds to metabolites (e.g., cocaine to benzoylecgonine), and typical doses
 
 ---
 background-image: url("talk_files/mass_load_time.png")
@@ -225,9 +226,8 @@ background-size: contain
 # Limitations
 
 - Study sampling process of "using the bathroom in the stadium during a game" is imperfect representation of substance use in Gainesville community
-- A ton of assumptions from estimated concentration to number of doses throughout the game
+- We made assumptions to estimate concentration to number of doses throughout the game
 - Cannot distinguish between recreational use and indicated use
-- Cannot distinguish between before stadium entry use and during game use
 
 ---
 # Strengths
@@ -247,3 +247,12 @@ background-size: contain
 class: inverse, middle, center
 
 # Questions
+
+---
+class: inverse, middle, center
+
+# Extra slides
+
+---
+background-image: url("talk_files/ppcs_amphetamine.png")
+background-size: contain
