@@ -76,12 +76,11 @@ background-size: cover
 ## Matthew Loop
 
 - PhD in Biostatistics / Postdoctoral Fellowship in Epidemiology from UAB
-- Assistant Professor at UNC since 2016
-- Currently in Division of Pharmacotherapy and Experimental Therapeutics at the UNC Eshelman School of Pharmacy
+- Assistant Professor in Department of Health Outcomes Research and Policy in the Harrison College of Pharmacy
 ]
 
 .pull-right[
-![](https://chapelboromedia.s3.amazonaws.com/uploads/2021/08/11133513/Beard-Hall.jpg)
+![](https://pharmacy.auburn.edu/about/images/walker-side.jpg)
 - "Statidemiologist" who estimates the effects of drugs using observational data
 ]
 
@@ -112,7 +111,7 @@ class: center, middle, inverse
 
 ---
 
-background-image: url("https://www.stadiumjourney.com/wp-content/uploads/2015/09/Welcome-to-the-Swamp.jpg")
+background-image: url("https://onlygators.com/wp-content/uploads/2018/09/this-is-the-swamp-dark-uf.jpg")
 background-size: cover
 
 ---
