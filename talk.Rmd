@@ -41,70 +41,88 @@ class: center, middle, inverse
 ## [mloop.github.io/wastewater-talk](https://mloop.github.io/wastewater-talk/)
 
 ---
+background-image: url("https://www.kpwashingtonresearch.org/application/files/7915/9666/5053/CDC-Opioid-drug-Wave-Lines-Mortality_2col.jpg")
+background-size: contain
 
+---
+class: inverse
+
+## We want to reduce mortality and morbidity associated with opioid abuse (and other substances!).   
+## Why might that be hard with overdose death data?
+---
+class: inverse
+
+# What material were most medieval castles made of?
+---
+background-image: url("https://d1xk4lz7u1u0yl.cloudfront.net/images/2018/8/9/Tiger_Walk_UGA.JPG")
+background-size: cover
+
+class: inverse, left, bottom
+
+## What if we are missing some of the cases of use?
+
+---
+class: inverse, middle, center
+
+# But, who the heck am I to be talking to you about this?
+---
+# Matthew Loop
+
+.pull-left[
+- Grew up in Birmingham
+- Decided didn't want to be a doctor and had always liked Biology and Math
+- Heard the word Biostatistics Spring of Junior Year
+- Did a PhD in Biostatistics and Postdoctoral Fellowship in Epidemiology at UAB
+]
+
+.pull-right[
+- Spent 6 years as Assistant Professor at UNC Chapel Hill (4 in public health, 2 in pharmacy)
+- "Statidemiologist" who estimates the effects of drugs using observational data
+]
+
+---
+class: inverse, middle, center
+
+# I use creative solutions to solve health problems
+
+---
+# Study we conducted
+
+1. Use a mass gathering context to study use of substances commonly abused
+2. Collected samples to detect substances commonly abused in wastewater
+3. Estimate the total number of doses in the stadium
+
+---
 background-image: url("https://chapelboromedia.s3.amazonaws.com/uploads/2021/02/11171326/Image-from-iOS-3.jpg")
 background-size: cover
 
-
 ### .white[UNC beats Duke: Feb 12, 2021]
+
+---
+# What is a mass gathering
+
+> A mass gathering is a planned or spontaneous event where the number of people attending could strain the planning and response resources of the community or country hosting the event. The Olympic Games, The Hajj, and other major sporting, religious, and cultural events are all examples of a mass gathering. - [World Health Organization](https://www.who.int/news-room/questions-and-answers/item/what-is-who-s-role-in-mass-gatherings)
 
 ---
 
 # Mass gatherings and substance use
 
-- Could provide a window into community substance use
+- Recreational substance use is not uncommon at mass gatherings
+- Could provide a window into community substance use (not just overdose deaths)
 - A particular community could have a certain profile of substance use, leading to targeted interventions
 
 ---
-background-image: url("talk_files/mgs_ph.png")
-background-size:contain
----
-background-image: url("https://image.cnbcfm.com/api/v1/image/106666956-1597694787011-2018-09-22T014903Z_502209526_RC131D7A3900_RTRMADP_3_USA-UNIVERSITY-UNC.jpg?v=1597694880&w=929&h=523&ffmt=webp")
-background-size: cover
+# Wastewater to detect substance use
+
+![](https://www.cdc.gov/pcd/issues/2020/images/20_0053_01.gif)
 
 ---
 
-# The problem
+class: inverse, middle, center
 
-- How do we measure something that's (possibly) illegal to have?
-- What if we don't have the resources our particular community needs?
-- We should care for the health problems of our particular community (i.e., precision public health)
+# Let's say you wanted to calculate the rate of substances commonly abused in a community using wastewater. So you need to somehow divide the number of doses you might detect by the population at risk. What is hard about that in a community-based study? Discuss with a neighbor for 5 minutes, then answer [here](https://PollEv.com/free_text_polls/IfgEXtDXYNnZXz0cZCXGJ/respond).
 
 ---
-
-.pull-left[
-## Matthew Loop
-
-- PhD in Biostatistics / Postdoctoral Fellowship in Epidemiology from UAB
-- Assistant Professor in Department of Health Outcomes Research and Policy in the Harrison College of Pharmacy
-]
-
-.pull-right[
-![](https://pharmacy.auburn.edu/about/images/walker-side.jpg)
-- "Statidemiologist" who estimates the effects of drugs using observational data
-]
-
----
-# Measuring drugs consumed is hard
-
-- Postdoctoral fellowship work was on beta blocker use and heart failure among Medicare beneficiaries
-- We have to measure proxies for watching someone put the pill in the mouth and swallow it
-- Partnering with basic sciences allowed us to obtain objectives measures of use in a *population*
-
----
-# Aims
-
-1. Determine whether we can detect metabolites and parent compounds of substances commonly abused during a college football game using waste water sampling
-2. Model the concentrations for most commonly observed substances
-3. Estimate the number of doses of these substances consumed
-
----
-
-background-image: url("talk_files/team.png")
-background-size: cover
-
----
-
 class: center, middle, inverse
 
 ## So, where might you go to look for substances commonly abused?
@@ -115,16 +133,17 @@ background-image: url("https://onlygators.com/wp-content/uploads/2018/09/this-is
 background-size: cover
 
 ---
+background-image: url("https://a.espncdn.com/media/motion/2018/0909/evc_NCF_20180909_uk__fla_aba4a828_379c_4833_adc6_870/evc_NCF_20180909_uk__fla_aba4a828_379c_4833_adc6_870.jpg")
+background-size: cover
 
-# Measure the drug concentrations
-
-- Used a Teledyne ISCO sampler
-- Sampling 1 hour before game to 30 minutes after game
-- Samples of 300 mL wastewater collected every 30 minutes
-
-![](https://www.teledyneisco.com/en-us/waterandwastewater/Product%20Images/3700C.jpg)
+class: inverse
+# U of KY vs. UF in 2018 - 80,651 fans
 
 ---
+background-image: url("talk_files/team.png")
+background-size: cover
+---
+
 background-image: url("talk_files/bb8.jpeg")
 background-size:contain
 ---
@@ -136,6 +155,17 @@ background-size:contain
 
 background-image: url("talk_files/taking_sample.jpeg")
 background-size:contain
+
+---
+
+# Measure the drug concentrations
+
+- Used a Teledyne ISCO sampler
+- Sampling 1 hour before game to 30 minutes after game
+- Samples of 300 mL wastewater collected every 30 minutes
+
+<img src="https://www.teledyneisco.com/en-us/Water_/Product%20Images/GLS-Sampler-Lid-Off-Web.png" alt="image" width="300" height="auto">
+
 ---
 # Measure the drug concentrations
 - Wastewater samples underwent solid phase extraction
@@ -154,53 +184,12 @@ background-size: contain
 
 ---
 
-# Model the concentration values
-
-- Continuous, bounded outcome with heavy right skew
-- Values not observed because they are below or above limits of quantitation
-- Clustering of values (samples taken from same location)
-- Small sample sizes (only one observation per group)
-
----
-# Model the concentration values
-
-- Multilevel modeling to account for the correlation
-- Use the log transformed values to make the normal likelihood more scientifically plausible
-- Modeled the 10 compounds that were detected in at least 50% of the samples
-
----
-# (What is a multilevel model?)
-
-- Basically a linear regression model with variables to represent group, but the variables are *special*
-- Our groups were: location of measurement (3 levels), lab member who performed the solid-phase extraction (2 levels), and machine we ran the LC-MS on (2 levels)
-- Multilevel models "borrow" information from one level to predict the mean of another level
-- Borrowing leads to better estimates when some groups are small
-
----
-# Model the concentration values
-
-- Modeled the values above and below the limits of quantitation as "censored" (just like in survival analysis)
-- Slightly informative priors helped get the model to fit with the small sample sizes
-
----
-class: middle
-.pull-left[
-![](talk_files/08_prior.png)
-]
-
-.pull-right[
-![](talk_files/08_posterior.png)
-]
----
-background-image: url("talk_files/02_marginal_means.png")
-background-size: contain
 
 ---
 
-# Estimate consumption
+# Estimate the total number of doses in the stadium
 
 1. Estimate the flow of water during last 30 minutes
-    - used measurement at central station then weighted each location according to stadium capacity
 2. Estimate "mass load" (mg of compound) based on concentration and flow over last 30 minutes
 3. Estimate the number of doses consumed over entire sampling period
     - assumed excretion rate, ratio of molecular weights of parent compounds to metabolites (e.g., cocaine to benzoylecgonine), and typical doses
@@ -218,40 +207,49 @@ background-size: contain
 # Summary of findings
 
 1. We could detect compounds that are commonly abused using wastewater outflow at a college football game
-2. Median concentrations were highest at times when more people are going to the bathroom (e.g., in between quarters or half-time)
+2. Concentrations tended to be highest when more people are going to the bathroom (e.g., in between quarters or half-time)
 3. Narcotics and opioids were among the most common compounds detected
 
 ---
-# Limitations
 
-- Study sampling process of "using the bathroom in the stadium during a game" is imperfect representation of substance use in Gainesville community
-- We made assumptions to estimate concentration to number of doses throughout the game
-- Cannot distinguish between recreational use and indicated use
+class: inverse, middle, center
 
----
-# Strengths
-
-- Didn't artificially reduce the variability by averaging across multiple runs or deterministically imputing observations above/below limits of quantitation
-- Didn't *overestimate* the concentrations using other types of deterministic imputation
+# Take 5 minutes with your neighbor and list as many limitations as you can think of about this study. Enter them [here](https://PollEv.com/free_text_polls/ravcWmBjBhKslKBZMF4bJ/respond).
 
 ---
+
+background-image: url("https://auburntigers.com/images/2021/6/4/12_alabama_20171125_362_2.jpg")
+background-size: contain
+
+class: inverse
+
 # Future directions
 
-- Submitted an R21 to sample at multiple games: game-to-game variability, environmental predictors of concentrations, and broader impact of game day on health services delivery
-- Improve understanding of very specific exposures in a very specific population -> precision public health
-- Further combine basic science and population health strategies to understand substance use / abuse in our communities (who deserve our best)
-- Could get a picture of use in a community that is more accurate than self-report 
 
 ---
+
+# One Health
+
+![](https://www.vetmed.auburn.edu/wp-content/uploads/2023/07/paoh-circles-1062x365-1.png)
+
+---
+# What next?
+
+- If you're interested in getting involved in these studies and would want to do data collection, please email me at `matthew_loop@auburn.edu`
+- Take a look at our PhD program in Health Outcomes Research and Policy
+
+<img src="talk_files/chat.png" alt="image" width="auto" height="250">
+
+---
+# What next?
+
+- PhD programs in VetMed that concentrate on epidemiology (Dr. Laura Huber coming next week)
+- MS/PhD programs in Epidemiology or Biostatistics at UAB
+- I will talk with *any* one of you
+
+---
+
 class: inverse, middle, center
 
 # Questions
 
----
-class: inverse, middle, center
-
-# Extra slides
-
----
-background-image: url("talk_files/ppcs_amphetamine.png")
-background-size: contain
