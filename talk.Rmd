@@ -184,9 +184,6 @@ background-size: contain
 
 ---
 
-
----
-
 # Estimate the total number of doses in the stadium
 
 1. Estimate the flow of water during last 30 minutes
